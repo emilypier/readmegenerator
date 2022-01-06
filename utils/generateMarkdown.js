@@ -1,22 +1,23 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+//-------------LICENSE SECTION -----------------
+//returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "No license"){
     return `![${license} license](https://img.shields.io/badge/license-${license}-yellow)`
   }
   return '';
-}
+};
 
-// TODO: Create a function that returns the license link
+//returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "No license"){
     return "\n* [License](#license)\n"
   }
   return '';
-}
+};
 
-// TODO: Create a function that returns the license section of README
+//returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "No license"){
@@ -25,21 +26,63 @@ function renderLicenseSection(license) {
     `
   }
   return '';
-}
+};
 
-// TODO: Create a function to generate markdown for README
+//returns the license text for the under the License heading
+function renderLicense(license) {
+  if (license !== "No license"){
+    return `${license}
+    
+    `
+  }
+  return '';
+};
+
+//-------------DESCRIPTION SECTION -----------------
+//returns description based on what user enters
+// If there is no description, return an empty string
+function renderDescription(description) {
+  if (description !== " "){
+    return `${description}`;
+  }
+  return '';
+};
+
+//returns description link
+// If there is no description, return an empty string
+function renderDescriptionLink(description) {
+  if (description !== " "){
+    return `\n* [Description](#description)\n
+    s
+    `
+  }
+  return '';
+};
+
+//returns the description section of README?
+// If there is no description, return an empty string
+function renderDescriptionSection(description) {
+  if (description !== ""){
+    return `## Description
+    
+    `
+  }
+  return '';
+};
+
+//-------------LICENSE SECTION -----------------
+
+//generates markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
 
   ## Description 
-
-
+  ${renderDescription(data.description)}
 
 ## Table of Contents 
 
-If your README is very long, add a table of contents to make it easy for users to find what they need.
-
+${renderDescriptionLink(data.description)}
 * [Installation](#installation)
 
 * [Usage](#usage)
@@ -61,7 +104,7 @@ ${renderLicenseLink(data.license)}
 
 
 ## License
-
+${renderLicense(data.license)}
 
 
 ## Features
