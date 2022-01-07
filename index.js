@@ -32,6 +32,19 @@ const questions = [
     },
   },
   {
+    type: "input",
+    name: "email",
+    message: "Enter your email",
+    validate: (email) => {
+      if (email) {
+        return true;
+      } else {
+        console.log("Please enter your email.");
+        return false;
+      }
+    },
+  },
+  {
     type: "confirm",
     name: "confirmImage",
     message: "Would you like to include an image?",
@@ -59,7 +72,17 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Provide some a description of your project?",
+    message: "Provide a description of your project? Hit enter to skip.",
+  },
+  {
+    type: "input",
+    name: "install",
+    message: "Provide installation information for your project? Hit enter to skip.",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Provide usage instructions for your project? Hit enter to skip.",
   },
   {
     type: "list",
@@ -73,6 +96,17 @@ const questions = [
       "Rails", 
       "No license"
     ]
+  },
+  {
+    type: "confirm",
+    name: "confirmCredits",
+    message: "Did anyone help with this project?",
+    default: false,
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Provide instructions on how to test project? Hit enter to skip.",
   },
 ];
 

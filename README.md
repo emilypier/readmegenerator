@@ -1,32 +1,38 @@
-# title here
-  ![.NET license](https://img.shields.io/badge/license-.NET-yellow)
+# titulo
+  ![MIT license](https://img.shields.io/badge/license-MIT-yellow)
 
   ## Description 
-  description here yo yo
+  descripcion
 
 ## Table of Contents 
 
 
 * [Description](#description)
 
-    s
     
+
 * [Installation](#installation)
+
 
 * [Usage](#usage)
 
-* [License](#license)
+
 
 * [Credits](#credits)
 
 
 
 ## Installation
+    
+    
+1.) download. 2. enjoy
+    
 
-
-
-## Usage 
-
+## Usage
+    
+    
+1. enter name. 2. hit save
+    
 
 
 ## Credits
@@ -34,8 +40,7 @@
 
 
 ## License
-.NET
-    
+MIT
     
 
 
@@ -48,5 +53,12 @@
 
 
 ## Tests
+
+
+
+## Questions
+Visit my GitHub: https://github.com/emilypier
+
+Email me: asldjs@gmail.com
 
 
