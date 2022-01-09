@@ -45,68 +45,82 @@ const questions = [
     },
   },
   {
-    type: "confirm",
-    name: "confirmImage",
-    message: "Would you like to include an image?",
-    default: true,
-  },
-  {
-    type: "checkbox",
-    name: "languages",
-    message: "What did you build this project with? (Check all that applies)",
+    type: 'checkbox',
+    name: 'languages',
+    message: 'What did you build this project with? (Check all that applies)',
     choices: [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "ES6",
-      "jQuery",
-      "Bootstrap",
-      "Node",
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'ES6',
+      'jQuery',
+      'Bootstrap',
+      'Node',
     ],
   },
   {
-    type: "input",
-    name: "title",
-    message: "What is the title of your project?",
+    type: 'input',
+    name: 'title',
+    message: 'What is the title of your project?',
   },
   {
-    type: "input",
-    name: "description",
-    message: "Provide a description of your project? Hit enter to skip.",
+    type: 'input',
+    name: 'description',
+    message: 'Provide a description of your project:',
+    validate: description => {
+      if (description) {
+        return true;
+      } else {
+        console.log('Please add a description of your project.');
+        return false;
+      }
+    }
   },
   {
-    type: "input",
-    name: "install",
-    message: "Provide installation information for your project? Hit enter to skip.",
+    type: 'input',
+    name: 'install',
+    message: 'Provide installation information:',
   },
   {
-    type: "input",
-    name: "usage",
-    message: "Provide usage instructions for your project? Hit enter to skip.",
+    type: 'input',
+    name: 'usage',
+    message: 'Provide usage instructions:',
   },
   {
-    type: "list",
-    name: "license",
-    message: "Chose a license.",
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license:',
     choices: [
-      "MIT", 
-      "Babel",
-      ".NET", 
-      "Core", 
-      "Rails", 
-      "No license"
+      'MIT', 
+      'Babel',
+      '.NET', 
+      'Core', 
+      'Rails', 
+      'No license'
     ]
   },
   {
-    type: "confirm",
-    name: "confirmCredits",
-    message: "Did anyone help with this project?",
+    type: 'confirm',
+    name: 'confirmCredits',
+    message: "Would you like to add a contributor?",
     default: false,
   },
   {
-    type: "input",
-    name: "tests",
-    message: "Provide instructions on how to test project? Hit enter to skip.",
+    type: 'input',
+    name: 'credits',
+    message: "List the contributor's GitHub username:",
+    when: ({confirmCredits}) => {
+      if(confirmCredits) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  },
+  {
+    type: 'input',
+    name: 'tests',
+    message: 'Please provide test instructions:',
   },
 ];
 
@@ -119,7 +133,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((userResponse) => {
     console.log(userResponse);
-    writeToFile("README.md", generateMarkdown({ ...userResponse }))
+    writeToFile('README.md', generateMarkdown({ ...userResponse }))
   });
 }
 

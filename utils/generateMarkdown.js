@@ -119,6 +119,35 @@ function renderUsage(usage) {
 };
 
 //--------------------------CREDITS SECTION --------------------------------------
+//returns the credits link to table of contents
+//If there are no credits, return an empty string
+function renderCreditsLink(credits) {
+  if (credits !== ""){
+    return "\n* [Credits](#credits)\n"
+  }
+  return '';
+};
+
+//returns the credits section of README
+// If there is no credits, return an empty string
+function renderCreditsSection(credits) {
+  if (credits !== ""){
+    return `## Contributing
+    
+    `
+  }
+  return '';
+};
+
+//returns the usage info text for the under the Installation heading
+// If there is no usage info, return an empty string
+function renderCredits(credits) {
+  if (credits !== ""){
+    return `${credits}
+    `
+  }
+  return '';
+};
 
 
 //---------------------------TEST SECTION --------------------------------------
@@ -135,7 +164,7 @@ function renderTestsLink(tests) {
 // If there is no usage info, return an empty string
 function renderTestsSection(tests) {
   if (tests !== ""){
-    return `## Test
+    return `## Tests
     
     `
   }
@@ -163,15 +192,15 @@ function generateMarkdown(data) {
   ## Description 
   ${renderDescription(data.description)}
 
-## Table of Contents 
+  ## Table of Contents 
 
-${renderDescriptionLink(data.description)}
-${renderInstallLink(data.install)}
-${renderUsageLink(data.usage)}
-
-
-* [Credits](#credits)
-
+  ${renderDescriptionLink(data.description)}
+  ${renderInstallLink(data.install)}
+  ${renderUsageLink(data.usage)}
+  ${renderLicenseLink(data.license)}
+  ${renderCreditsLink(data.credit)}
+  ${renderTestsLink(data.tests)}
+* [Questions](#questions)
 
 
 ${renderInstallSection(data.install)}
@@ -180,21 +209,11 @@ ${renderInstall(data.install)}
 ${renderUsageSection(data.usage)}
 ${renderUsage(data.usage)}
 
-
-## Credits
-
-
-
 ## License
-${renderLicense(data.license)}
+This application is covered under ${renderLicense(data.license)} license.
 
-
-## Features
-
-
-
-## Contributing
-
+${renderCreditsSection(data.credits)}
+https://github.com/${data.credits}
 
 
 ${renderTestsSection(data.tests)}
@@ -204,8 +223,7 @@ ${renderTests(data.tests)}
 ## Questions
 Visit my GitHub: https://github.com/${data.github}
 
-Email me: ${data.email}
-
+Ask me questions or reach out via email. My email is ${data.email}.
 
 `;
 }
