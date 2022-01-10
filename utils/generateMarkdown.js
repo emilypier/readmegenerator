@@ -70,7 +70,7 @@ function renderInstallLink(install) {
 //returns the installation section of README
 // If there is no installation info, return an empty string
 function renderInstallSection(install) {
-  if (install !== ""){
+  if (install !== ''){
     return `## Installation
     
     `
@@ -80,7 +80,7 @@ function renderInstallSection(install) {
 
 //returns the installation info text for the under the Installation heading
 function renderInstall(install) {
-  if (install !== ""){
+  if (install !== ''){
     return `${install}
     `
   }
@@ -91,8 +91,8 @@ function renderInstall(install) {
 //returns the usage link to table of contents
 //If there are no usage instructions, return an empty string
 function renderUsageLink(usage) {
-  if (usage !== ""){
-    return "\n* [Usage](#usage)\n"
+  if (usage !== ''){
+    return '\n* [Usage](#usage)\n'
   }
   return '';
 };
@@ -100,7 +100,7 @@ function renderUsageLink(usage) {
 //returns the usage info section of README
 // If there is no usage info, return an empty string
 function renderUsageSection(usage) {
-  if (usage !== ""){
+  if (usage !== ''){
     return `## Usage
     
     `
@@ -111,7 +111,7 @@ function renderUsageSection(usage) {
 //returns the usage info text for the under the Installation heading
 // If there is no usage info, return an empty string
 function renderUsage(usage) {
-  if (usage !== ""){
+  if (usage !== ''){
     return `${usage}
     `
   }
@@ -122,8 +122,8 @@ function renderUsage(usage) {
 //returns the credits link to table of contents
 //If there are no credits, return an empty string
 function renderCreditsLink(credits) {
-  if (credits !== ""){
-    return "\n* [Credits](#credits)\n"
+  if (credits !== ''){
+    return '\n* [Contributing](#contributing)\n'
   }
   return '';
 };
@@ -131,19 +131,9 @@ function renderCreditsLink(credits) {
 //returns the credits section of README
 // If there is no credits, return an empty string
 function renderCreditsSection(credits) {
-  if (credits !== ""){
+  if (credits !== ''){
     return `## Contributing
     
-    `
-  }
-  return '';
-};
-
-//returns the usage info text for the under the Installation heading
-// If there is no usage info, return an empty string
-function renderCredits(credits) {
-  if (credits !== ""){
-    return `${credits}
     `
   }
   return '';
@@ -154,8 +144,8 @@ function renderCredits(credits) {
 //returns the test instructions link to table of contents
 //If there are no test instructions, return an empty string
 function renderTestsLink(tests) {
-  if (tests !== ""){
-    return "\n* [Tests](#tests)\n"
+  if (tests !== ''){
+    return '\n* [Tests](#tests)\n'
   }
   return '';
 };
@@ -174,7 +164,7 @@ function renderTestsSection(tests) {
 //returns the usage info text for the under the Installation heading
 // If there is no usage info, return an empty string
 function renderTests(tests) {
-  if (tests !== ""){
+  if (tests !== ''){
     return `${tests}
     `
   }
@@ -209,7 +199,7 @@ ${renderInstall(data.install)}
 ${renderUsageSection(data.usage)}
 ${renderUsage(data.usage)}
 
-## License
+${renderLicenseSection(data.license)}
 This application is covered under ${renderLicense(data.license)} license.
 
 ${renderCreditsSection(data.credits)}

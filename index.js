@@ -44,20 +44,20 @@ const questions = [
       }
     },
   },
-  {
-    type: 'checkbox',
-    name: 'languages',
-    message: 'What did you build this project with? (Check all that applies)',
-    choices: [
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'ES6',
-      'jQuery',
-      'Bootstrap',
-      'Node',
-    ],
-  },
+  // {
+  //   type: 'checkbox',
+  //   name: 'languages',
+  //   message: 'What did you build this project with? (Check all that applies)',
+  //   choices: [
+  //     'JavaScript',
+  //     'HTML',
+  //     'CSS',
+  //     'ES6',
+  //     'jQuery',
+  //     'Bootstrap',
+  //     'Node',
+  //   ],
+  // },
   {
     type: 'input',
     name: 'title',
@@ -100,22 +100,9 @@ const questions = [
     ]
   },
   {
-    type: 'confirm',
-    name: 'confirmCredits',
-    message: "Would you like to add a contributor?",
-    default: false,
-  },
-  {
     type: 'input',
     name: 'credits',
-    message: "List the contributor's GitHub username:",
-    when: ({confirmCredits}) => {
-      if(confirmCredits) {
-        return true;
-      } else {
-        return false;
-      }
-    }
+    message: "If there was a contributor, list their GitHub username:",
   },
   {
     type: 'input',

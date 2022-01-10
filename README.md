@@ -1,8 +1,8 @@
-# d
-  ![MIT license](https://img.shields.io/badge/license-MIT-yellow)
+# readme generator
+  ![Core license](https://img.shields.io/badge/license-Core-yellow)
 
   ## Description 
-  f
+  description goes here
 
   ## Table of Contents 
 
@@ -20,7 +20,7 @@
 * [License](#license)
 
   
-* [Credits](#credits)
+* [Contributing](#contributing)
 
   
 * [Tests](#tests)
@@ -31,34 +31,36 @@
 ## Installation
     
     
-d
+install node.js
     
 
 ## Usage
     
     
-d
+answer all the questions from the command line
     
 
 ## License
-MIT
     
+    
+This application is covered under Core
+     license.
 
 ## Contributing
     
     
-https://github.com/sammie
+https://github.com/Pete
 
 
 ## Tests
     
     
-d
+test instructions go here
     
 
 
 ## Questions
-Visit my GitHub: https://github.com/f
+Visit my GitHub: https://github.com/emilypier
 
-Email me: f
+Ask me questions or reach out via email. My email is piersoee@gmail.com.
 
