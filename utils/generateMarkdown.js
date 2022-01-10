@@ -139,6 +139,17 @@ function renderCreditsSection(credits) {
   return '';
 };
 
+//returns the contributor's GitHub username to README
+// If there is no credits, return an empty string
+function renderCreditsSection(credits) {
+  if (credits !== ''){
+    return `https://github.com/${data.credits}
+    
+    `
+  }
+  return '';
+};
+
 
 //---------------------------TEST SECTION --------------------------------------
 //returns the test instructions link to table of contents
@@ -160,6 +171,7 @@ function renderTestsSection(tests) {
   }
   return '';
 };
+
 
 //returns the usage info text for the under the Installation heading
 // If there is no usage info, return an empty string
@@ -203,7 +215,7 @@ ${renderLicenseSection(data.license)}
 This application is covered under ${renderLicense(data.license)} license.
 
 ${renderCreditsSection(data.credits)}
-https://github.com/${data.credits}
+
 
 
 ${renderTestsSection(data.tests)}

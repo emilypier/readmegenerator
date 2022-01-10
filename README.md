@@ -1,8 +1,8 @@
-# readme generator
-  ![Core license](https://img.shields.io/badge/license-Core-yellow)
+# d
+  ![MIT license](https://img.shields.io/badge/license-MIT-yellow)
 
   ## Description 
-  description goes here
+  dsf
 
   ## Table of Contents 
 
@@ -31,36 +31,34 @@
 ## Installation
     
     
-install node.js
+dsfsdf
     
 
 ## Usage
     
     
-answer all the questions from the command line
+sdfsf
     
 
 ## License
     
     
-This application is covered under Core
+This application is covered under MIT
      license.
 
-## Contributing
-    
-    
-https://github.com/Pete
+
+
 
 
 ## Tests
     
     
-test instructions go here
+sfmsdmf
     
 
 
 ## Questions
-Visit my GitHub: https://github.com/emilypier
+Visit my GitHub: https://github.com/sfak
 
-Ask me questions or reach out via email. My email is piersoee@gmail.com.
+Ask me questions or reach out via email. My email is f.
 
