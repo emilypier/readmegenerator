@@ -223,6 +223,8 @@ ${renderTests(data.tests)}
 
 
 ## Questions
+Made by ${data.name}.
+
 Visit my GitHub: https://github.com/${data.github}
 
 Ask me questions or reach out via email. My email is ${data.email}.

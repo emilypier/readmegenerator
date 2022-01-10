@@ -1,8 +1,8 @@
-# d
+# README Generator
   ![MIT license](https://img.shields.io/badge/license-MIT-yellow)
 
   ## Description 
-  dsf
+  A command line application that dynamically creates a README file.
 
   ## Table of Contents 
 
@@ -23,21 +23,19 @@
 * [Contributing](#contributing)
 
   
-* [Tests](#tests)
-
 * [Questions](#questions)
 
 
 ## Installation
     
     
-dsfsdf
+Install Node.JS from their website, then clone this repo. Open index.js and in the terminal run the command “npm install”. Then run “node index.js”.
     
 
 ## Usage
     
     
-sdfsf
+Answer the questions in the terminal and hit “Enter” to submit each answer. When all the questions are answered the README file in the repo will be updated with all of the input you provided.
     
 
 ## License
@@ -50,15 +48,14 @@ This application is covered under MIT
 
 
 
-## Tests
-    
-    
-sfmsdmf
-    
+
+
 
 
 ## Questions
-Visit my GitHub: https://github.com/sfak
+Made by Emily Pierson.
 
-Ask me questions or reach out via email. My email is f.
+Visit my GitHub: https://github.com/emilypier
+
+Ask me questions or reach out via email. My email is piersoee@gmail.com.
 
