@@ -36,6 +36,8 @@ Install Node.JS from their website, then clone this repo. Open index.js and in t
     
     
 Answer the questions in the terminal and hit “Enter” to submit each answer. When all the questions are answered the README file in the repo will be updated with all of the input you provided.
+
+Watch the walkthrough video [here](https://drive.google.com/file/d/1G4HSV34eVAEfsCt1fJ2j2mxI-SBRZCnd/view?usp=sharing).
     
 
 ## License
